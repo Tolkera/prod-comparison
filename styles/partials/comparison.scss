@@ -1,0 +1,68 @@
+.comparison {
+  overflow-x: scroll;
+}
+
+.comparison__table {
+  min-width: 600px;
+  @media(max-width: $media-tablet){
+    font-size: 14px;
+  }
+}
+
+.comparison__cell {
+  padding: 7px 15px;
+  vertical-align: top;
+  border-bottom: 1px solid $border-color;
+
+
+  &:first-child {
+    border-right: 1px solid $border-color;
+  }
+
+  .comparison__table--3 & {
+    width: 33%;
+  }
+
+  .comparison__table--4 & {
+    width: 25%;
+  }
+
+  .comparison__table--5 & {
+    width: 20%;
+  }
+}
+
+.comparison__row {
+
+  &:first-child {
+    .comparison__cell {
+      border-bottom: 0;
+    }
+  }
+
+  &:last-child {
+    .comparison__cell {
+      border-bottom: 0;
+    }
+  }
+}
+
+.comparison__row--highlighted {
+  background: $color-highlight;
+}
+
+.comparison__option {
+  font-size: 14px;
+  margin-bottom: 10px;
+  line-height: 1;
+  position: relative;
+  padding-left: 20px;
+  display: block;
+}
+
+.comparison__checkbox {
+  position: absolute;
+  left: 0;
+  top: 1px;
+}
+

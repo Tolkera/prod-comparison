@@ -1,0 +1,47 @@
+.product__badge {
+  max-width: 30px;
+  margin-right: 5px;
+}
+
+.product__name {
+  color: #3a8ebe;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.product__image {
+  max-width: 100px;
+  margin: 0 auto;
+  display: block;
+}
+
+.product__header {
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 2px solid $border-color;
+}
+
+.product__delete {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: $color-brand;
+  cursor: pointer;
+
+  &:hover {
+    opacity: .6;
+    transition: $transition;
+  }
+}
+
+.product__price {
+  color: #000;
+  font-weight: $weight--bold;
+}
+
+.product__amount {
+  color: rgba(0,0,0,.4);
+  font-weight: $weight--bold;
+  font-size: 14px;
+  text-transform: lowercase;
+}

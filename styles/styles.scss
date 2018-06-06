@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+$font-regular: 'Open Sans', sans-serif;
+
+$transition: all .3s ease;
+
+$media-mobile: 650px;
+$media-tablet: 850px;
+$media-desktop: 1200px;
+
+$error-background: #fecdd2;
+$error-color: #AE0404;
+
+$color-brand: #3a8ebe;
+$color-highlight: #cbe6f6;
+$border-color: rgba(0,0,0,.1);
+
+$weight--bold: 700;
+
+$transition: all .3s ease;
+
+@import "partials/normalize";
+@import "partials/base";
+@import "partials/utils";
+@import "partials/container";
+@import "partials/loader";
+@import "partials/product";
+@import "partials/heading";
+@import "partials/error";
+@import "partials/comparison";
